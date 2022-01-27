@@ -84,20 +84,22 @@ def fourth_group(name):
 
 @eel.expose
 def help():
-    answer = '''Lai izveidotu saukļu, noklikšķiniet uz vienas no pogām
-    1. Noklikšķinot uz pogas "1.grupa", tiks ģenerēts saukļus pēc veidnes: "Darbības vārds"
-    2. Noklikšķinot uz pogas "2.grupa", tiks ģenerēts saukļis pēc veidnes: "Darbības vārds + lietvārds vai darbības vārds + īpašības vārds"
-    3. Noklikšķinot uz pogas "3.grupa", tiks ģenerēts saukļus pēc veidnes: "Lietvārds + darbības vārds “is” + īpašības vārds"
-    4. Noklikšķinot uz pogas "4.grupa", tiks ģenerēts saukļus pēc veidnes: "Uzņēmuma nosaukums (vai vārds) + darbības vārds “is” + īpašības vārds", lai uzrakstītu uzņēmuma nosaukumu, ievadiet to tekstlodziņā'''
+    answer = '''Lai izveidotu saukli, noklikšķiniet uz vienas no pogām:
+    1. Noklikšķinot uz pogas "1.grupa", tiks ģenerēts sauklis ar struktūru "Darbības vārds".
+    2. Noklikšķinot uz pogas "2.grupa", tiks ģenerēts sauklis ar struktūru "Darbības vārds + lietvārds vai darbības vārds + īpašības vārds".
+    3. Noklikšķinot uz pogas "3.grupa", tiks ģenerēts sauklis ar struktūru "Lietvārds + darbības vārds “is” + īpašības vārds".
+    4. Noklikšķinot uz pogas "4.grupa", tiks ģenerēts sauklis ar struktūru "Uzņēmuma nosaukums (vai vārds) + darbības vārds “is” + īpašības vārds". Lai uzrakstītu uzņēmuma nosaukumu, ievadiet to tekstlodziņā.'''
     return answer
 
 @eel.expose
 def informacija():
-    answer = ''' Lai noskaidrotu biežāk lietotos šablonus, tika analizēti aptuveni 150 dažādi populāri reklāmas saukļi angļu valodā dažādās jomās un
-     izplatītākās teikumu struktūras tika sadalītas 3 grupās un apkopotas tabulā.
-     Informācija tika sagrupēta 3 grupās, kas atšķiras pēc teikuma uzbūves un saukļa garuma.Šajās trīs pamata struktūrās saukļu veidošanā neparādās uzņēmuma nosaukums, tomēr dažreiz uzņēmumi vēlētos iekļaut savus nosaukumus vai izvēlētus vārdus.
-     Tāpēc autors nāca klajā ar papildus struktūru. Par pamatu tika ņemta 3. grupa
-    '''
+    answer = ''' Kā datu bāzi saukļu ģenerēšanai programma izmanto grāmatas “100 ways to motivate others pt1”, “100 Ways to Motivate Yourself Change Your Life Forever” un sarakstu ar 1000 vispopulārākajiem angļu valodā vārdiem.
+Saukļi ir sadalīti 4 grupās, kas atšķiras pēc gramatiskās struktūras un garuma. 
+Saukļi no 1.grupas sastāv tikai no  darbības vārda, piemēram, sauklis “Think” (IBM).
+Saukļi no 2.grupas sastāv  no  darbības vārda un lietvārda vai no darbības vārda un īpašības vārda, piemēram,  sauklis “Think different” (Apple).
+Saukļi no 3.grupas sastāv  no  lietvārda, darbības vārda “is” un īpašības vārda, piemēram, sauklis “Life is good” (Sony).
+Saukļi no 4.grupas sastāv no  uzņēmuma nosaukuma darbības vārda “is” un īpašības vārda , piemēram,  sauklis “DK.Corp is uniqueness”.
+Programmas autors: Austrumlatvijas Tehnoloģiju vidusskolas 11.B klases skolnieks Daniils Krasnovs'''
     return answer
 
 @eel.expose
