@@ -111,4 +111,4 @@ def clear():
 
 
 eel.init("")
-eel.start("main.html",size=(700,500))
+eel.start("index.html",size=(700,500))
